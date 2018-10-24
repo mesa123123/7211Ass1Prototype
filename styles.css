@@ -1,0 +1,137 @@
+:root {
+	--primaryBlue: #113ec8;
+	--secondaryBlue: #061955;
+}
+
+@font-face {
+	font-family: Draftsman;
+	src: url("./prototype\ assets/fonts/Draftsman_0.ttf"), url("./prototype\ assets/fonts/Draftsman_0.woff");
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	background: url("./prototype\ assets/Basic\ Page\ Frame.svg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	overflow-x: hidden;
+}
+
+.centerFlexRow {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+.centerFlexCol {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.titleBacker {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 30vh;
+	width: 97vw;
+	background-color: var(--primaryBlue);
+	border: 0.5vmin solid white;
+	margin: auto;
+	padding: auto;
+}
+
+.titleContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 15vh;
+	width: 75vw;
+	background-color: var(--secondaryBlue);
+	border: 0.25vmin solid white;
+}
+
+.title {
+	font-size: 500%;
+}
+
+.pageContainer {
+	height: 80vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.upperPageContainer {
+	height: 50vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: row;
+}
+
+.lowerPageContainer {
+	height: 30vh;
+	width: 100vw;
+}
+
+.darkButton {
+	background-color: var(--secondaryBlue);
+	border: 0.5vmin solid white;
+}
+
+.darkButton:hover {
+	background-color: var(--primaryBlue);
+	opacity: 0.95;
+}
+
+.lightButton {
+	background-color: var(--primaryBlue);
+	border: 0.5vmin solid white;
+	opacity: 0.95;
+}
+
+.lightButton:hover {
+	background-color: var(--secondaryBlue);
+	opacity: 1;
+}
+
+.texts {
+	color: white;
+	font-family: "Draftsman", sans-serif;
+}
+
+.slider {
+	-webkit-appearance: none;
+	width: 80%;
+	height: 75%;
+	margin: auto;
+	background: var(--secondaryBlue);
+	outline: none;
+	-webkit-transition: 0.2s;
+	transition: opacity 0.2s;
+	border: 0.5vmin solid white;
+}
+
+.slider:hover {
+	opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 25px;
+	height: 25px;
+	background: var(--primaryBlue);
+}
+
+.slider::-moz-range-thumb {
+	width: 25px;
+	height: 25px;
+	background: var(--primaryBlue);
+}

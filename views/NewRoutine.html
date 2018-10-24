@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Script to enable hot reload during development-->
+    <script type="text/javascript" src="http://livejs.com/live.js"></script>
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+</head>
+
+<body>
+    <div class="titleBacker">
+        <div class="titleContainer">
+            <h1 class="texts title">NEW ROUTINE</h1>
+        </div>
+    </div>
+    <div class="pageContainer">
+        <!-- First Option Container, Select Goal -->
+        <div class="darkButton centerFlexCol" style="height:25vh;width:75vw;margin:auto;">
+            <div class="darkButtonTopContainer centerFlexRow" style="height:50%;width:100%;">
+                <h1 class="texts">SELECT YOUR GOAL</h1>
+            </div>
+            <div class="lightButton centerFlexRow" style="margin:auto;height:45%;width:99%;">
+                <div class="lightButton" style="margin:5%;min-height:75%;min-width:24%;">
+                    <p class="texts">LOSE FAT</p>
+                </div>
+                <div class="lightButton" style="margin:5%;min-height:75%;min-width:24%;">
+                    <p class="texts">BUILD MUSCLE</p>
+                </div>
+                <div class="lightButton" style="margin:5%;min-height:75%;min-width:24%;">
+                    <p class="texts">GAIN STRENGTH</p>
+                </div>
+            </div>
+        </div>
+        <!-- Second Option Container How Many Days -->
+        <div class="darkButton centerFlexCol" style="height:25vh;width:75vw;margin:auto;">
+            <div class="darkButtonTopContainer centerFlexRow" style="height:50%;width:100%;">
+                <h1 class="texts">DAYS TO TRAIN?</h1>
+            </div>
+            <div class="lightButton centerFlexRow" style="margin:auto;height:45%;width:99%;">
+                <input type="range" min="1" max="7" value="3" class="slider">
+            </div>
+        </div>
+        <!-- Example Day of Training-->
+        <div class="darkButton centerFlexCol" style="height:50vh;width:75vw;margin:auto;">
+            <div class="darkButtonTopContainer centerFlexCol" style="height:50%;width:100%;">
+                <h1 class="texts">DAY 1: EXAMPLE</h1>
+            </div>
+            <!--Exercise 1-->
+            <div class="lightButton centerFlexCol" style="margin:auto;height:45%;width:99%;">
+                <h3 class="texts">EXERCISE 1: CHOOSE 1</h3>
+                <div class="centerFlexRow">
+                    <div class="lightButton" style="margin:5%;min-height:75%;min-width:24%;">
+                        <p class="texts">INCLINE BENCH PRESS</p>
+                    </div>
+                    <div class="lightButton" style="margin:5%;min-height:75%;min-width:24%">
+                        <p class="texts">PRESS UP</p>
+                    </div>
+                    <div class="lightButton" style="margin:5%;min-height:75%;min-width:24%">
+                        <p class="texts">DUMBBELL PRESS</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Exercise 2 -->
+            <div class="lightButton centerFlexCol" style="margin:auto;height:45%;width:99%;">
+                <h3 class="texts">EXERCISE 2: CHOOSE 1</h3>
+                <div class="centerFlexRow">
+                    <div class="lightButton" style="margin:5%;min-height:75%;min-width:24%">
+                        <p class="texts">CHEST FLY</p>
+                    </div>
+                    <div class="lightButton" style="margin:5%;min-height:75%;min-width:24%">
+                        <p class="texts">CABLE FLY</p>
+                    </div>
+                    <div class="lightButton" style="margin:5%;min-height:75%;min-width:24%">
+                        <p class="texts">WOOD CHOPPER</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Save the routine -->
+        <div class="centerFlexRow" style="flex-direction:row-reverse;" onclick="location.href='./MyRoutines.html'">
+            <div class="darkButton">
+                <p class="texts">SAVE</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
