@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <!--Script to enable hot reload during development-->
+    <script type="text/javascript" src="http://livejs.com/live.js"></script>
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+</head>
+
+<body>
+    <div class="titleBacker">
+        <div class="titleContainer">
+            <div class="titleContainer">
+                <h1 class="texts title">MY ROUTINES</h1>
+            </div>
+        </div>
+    </div>
+    <div class="pageContainer">
+        <!-- first saved routine -->
+        <div class="darkButton centerFlexRow" onclick="location.href='./RoutineDays.html'" style="height:10vh;width:80vw;margin-bottom:5vh;">
+            <p class="texts" style="font-size:3vw;">
+                CURRENT ROUTINE
+            </p>
+        </div>
+        <!-- Second Saved Routine-->
+        <div class="darkButton centerFlexRow" onclick="location.href='./WorkoutSummary.html'" style="height:10vh;width:80vw;margin-bottom:5vh;justify-content:space-around;">
+            <div id="spacer"></div>
+            <p class="texts" style="font-size:3vw;">
+                EXAMPLE ROUTINE 1
+            </p>
+            <button class="lightButton" style="height:8vh;width:15vw;">
+                <p class="texts" style="font-size:1vw;">
+                    SET AS CURRENT
+                </p>
+            </button>
+        </div>
+        <!--Third Saved Routine-->
+        <div class="darkButton centerFlexRow" onclick="location.href='./WorkoutSummary.html'" style="height:10vh;width:80vw;margin-bottom:5vh;justify-content:space-around;">
+            <div id="spacer"></div>
+            <p class="texts" style="font-size:3vw;">
+                EXAMPLE ROUTINE 2
+            </p>
+            <button class="lightButton" style="height:8vh;width:15vw;">
+                <p class="texts" style="font-size:1vw;">SET AS CURRENT</p>
+            </button>
+        </div>
+        <div class="centerFlexRow" style="flex-direction: row-reversed;" onclick="location.href='../index.html'">
+            <div class="darkButton centerFlexRow">
+                <p class="texts">
+                    RETURN TO MAIN MENU
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
